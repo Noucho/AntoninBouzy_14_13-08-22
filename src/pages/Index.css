@@ -1,0 +1,9 @@
+.indexTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.indexLink {
+  display: flex;
+  justify-content: center;
+}
