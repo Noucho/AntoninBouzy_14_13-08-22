@@ -1,13 +1,43 @@
 .employeeTitle {
   display: flex;
   justify-content: center;
-  font-size: 28px;
+  background-color: #3F914F;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding-top:0.67em;
+  padding-bottom:1em;
+  margin-bottom:20px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+  z-index:5;
+  position: relative;
+  color:white;
 }
 
 .homeBtn {
-  display: flex;
-  justify-content: center;
-  margin: 0;
+  margin-top: 18px;
+  margin-bottom:18px;
+  margin-left:45%;
+  width: 10%;
+  border: none;
+  background-color:#3F914F;
+  color:white;
+  font-weight:bold;
+  font-size: medium;
+  -webkit-clip-path: polygon(13% 0, 88% 15%, 100% 86%, 1% 100%);
+  clip-path: polygon(13% 0, 88% 15%, 100% 86%, 1% 100%);
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-right : 40px;
+  padding-left: 40px;
+  transition:clip-path 0.7s;
+  text-decoration: none;
+}
+
+.homeBtn:hover {
+  -webkit-clip-path: polygon(2% 0, 100% 13%, 89% 100%, 16% 95%);
+  clip-path: polygon(2% 0, 100% 13%, 89% 100%, 16% 95%);
+  background-color: #68CB7C;
 }
 
 .table-footer {
@@ -23,10 +53,42 @@
 .dataTable {
   max-width: 1100px;
   margin: auto;
+  min-height:683px;
+  position:relative
+}
+
+.euka-datatables {
+  background-color:#E7E5DF !important
+}
+
+.table-header {
+  background-color: #9DEBAD;
+  margin-bottom:0 !important;
+}
+
+table {
+  background-color: #9DEBAD !important;
 }
 
 @media (max-width: 340px) {
   .table-search-input {
     max-width: 130px;
   }
+}
+
+main{
+  font-family: Candara;
+  background-color:white;
+}
+
+footer{
+  display:flex;
+  justify-content: center;
+  background-color: #3F914F;
+  font-size:larger;
+  color: white;
+  padding-top:70px;
+  padding-bottom:30px;
+  margin-top:20px;
+  clip-path: polygon(0 0, 100% 70%, 100% 100%, 0 100%);
 }

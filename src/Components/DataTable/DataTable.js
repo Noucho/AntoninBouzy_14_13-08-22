@@ -1,5 +1,5 @@
-import './DataTable.css'
 import EukaDataTable from 'euka-datatables'
+import './DataTable.css'
 import { Link } from 'react-router-dom'
 import { useGlobalState } from '../../state'
 
@@ -52,8 +52,8 @@ export default function DataTable() {
 
   return (
     <>
+      <h1 className="employeeTitle">Current Employees</h1>
       <section className="dataTable">
-        <h1 className="employeeTitle">Current Employees</h1>
         <EukaDataTable
           key={'table-1'}
           columns={columns}
@@ -64,6 +64,9 @@ export default function DataTable() {
       <Link className="homeBtn" to="/">
         Home
       </Link>
+      <footer>
+        HRnet - Wealth Health © 2022
+      </footer>
     </>
   )
 }

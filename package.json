@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "license": "MIT",
   "dependencies": {
-    "@noucho/react-modal": "^0.0.0",
+    "@noucho/react-modal": "^1.0.8",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
-    "@tim-jn/react-modal": "^2.1.0",
     "euka-datatables": "^1.3.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

@@ -56,6 +56,7 @@ export default function Form() {
     const newEmployees = [...employees, newEmployee]
     setEmployees(newEmployees)
     setIsValid(true)
+    document.getElementsByClassName('formBG')[0].style.backgroundColor='rgba(0,0,0,0.75)'
 
     const form = e.target
     form.reset()
@@ -67,7 +68,9 @@ export default function Form() {
       <form className="form" onSubmit={handleAddFormSubmit}>
         <div className="formUpperPart">
           <label className="formLabel">
+            <h3 className="labelText">
             First Name
+            </h3>
             <input
               className="formInput"
               type="text"
@@ -77,7 +80,9 @@ export default function Form() {
             />
           </label>
           <label className="formLabel">
-            Last Name
+            <h3 className="labelText">
+              Last Name
+            </h3>
             <input
               className="formInput"
               type="text"
@@ -87,7 +92,9 @@ export default function Form() {
             />
           </label>
           <label className="formLabel">
-            Date of Birth
+            <h3 className="labelText">
+              Date of Birth
+            </h3>
             <input
               className="formInput"
               type="date"
@@ -97,7 +104,9 @@ export default function Form() {
             />
           </label>
           <label className="formLabel">
-            Start Date
+            <h3 className="labelText">
+              Start Date
+            </h3>
             <input
               className="formInput"
               type="date"
@@ -109,7 +118,9 @@ export default function Form() {
         </div>
         <div className="fieldset">
           <label className="formLabel">
-            Street
+            <h3 className="labelText">
+              Street
+            </h3>
             <input
               className="formInput"
               type="text"
@@ -119,7 +130,9 @@ export default function Form() {
             />
           </label>
           <label className="formLabel">
-            City
+            <h3 className="labelText">
+              City
+            </h3>
             <input
               className="formInput"
               type="text"
@@ -129,7 +142,9 @@ export default function Form() {
             />
           </label>
           <label className="formLabel">
-            State
+            <h3 className="labelText">
+              State
+            </h3>
             <select
               className="formSelect"
               name="state"
@@ -147,7 +162,9 @@ export default function Form() {
             </select>
           </label>
           <label className="formLabel">
-            Zip Code
+            <h3 className="labelText">
+              Zip Code
+            </h3>
             <input
               className="formInput"
               type="text"
@@ -158,7 +175,9 @@ export default function Form() {
           </label>
         </div>
         <label className="formLabel">
-          Department
+          <h3 className="labelTextDepartment">
+            Department
+          </h3>
           <select
             className="formSelect"
             name="department"

@@ -26,8 +26,8 @@ Dans ce projet, il nous est demandé de convertir l'application HRNet de jQuery 
 ## ENGLISH VERSION
 
 ## Node version :
- - Node v16.0.0
- - npm v7.10.0
+ - Node v18.0.0
+ - npm v8.6.0
 
 ## Setup instructions :
     $ yarn install
